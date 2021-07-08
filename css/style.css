@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+	display: flex;
+	background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.content {
+	width: 100%;
+	min-height: 100vh;
+	padding: 3rem 5rem 4rem;
+	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	background-image: url(/images/bg-pattern-desktop.svg);
+	background-size: 100% 110vh;
+	background-repeat: no-repeat;
+}
+
+.logo {
+	margin: 0 1rem 5rem;
+}
+
+.img img {
+	width: 450px;
+	height: 100%;
+	object-fit: cover;
+	background-position: center;
+}
+
+.img-mobile img {
+	display: none;
+}
+
+h1 {
+	line-height: 1.2;
+	letter-spacing: 10px;
+	margin: 0 1rem 1rem;
+	font-size: 3.5rem;
+	width: 100px;
+	text-transform: uppercase;
+}
+
+h1 span {
+	font-weight: 300;
+	color: hsl(0, 36%, 70%);
+}
+.content p {
+	color: hsl(0, 36%, 70%);
+	font-weight: 400;
+	width: 70%;
+	margin: 0 1rem 0;
+}
+
+.form {
+	margin: 1rem 0;
+	position: relative;
+	z-index: 0;
+}
+
+.email {
+	display: inline-block;
+	margin: 20px 1rem 1rem;
+	padding: 15px 20px 15px;
+	width: 70%;
+	border-radius: 50px;
+	border: 1px solid hsl(0, 36%, 70%);
+}
+
+.warn {
+	display: none;
+	margin-left: 50px;
+	color: red;
+}
+
+.input {
+	position: relative;
+}
+.input img {
+	display: none;
+	bottom: -4px;
+	right: 75px;
+	position: absolute;
+}
+
+button {
+	position: absolute;
+	cursor: pointer;
+	vertical-align: middle;
+	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	border: 0;
+	top: 19px;
+	margin-left: -55px;
+	border-radius: 50px;
+	width: 80px;
+	height: 50px;
+	box-shadow: 1px 5px 10px hsla(0, 74%, 74%, 0.479);
+}
+
+button:hover {
+	opacity: 0.9, 9;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 900px) {
+	.content {
+		margin-top: 2rem;
+		padding: 0;
+	}
+	.logo {
+		margin-bottom: 30rem;
+	}
+
+	.img img {
+		display: none;
+	}
+
+	.img-mobile img {
+		display: block;
+		width: 100%;
+		height: 400px;
+		top: 120px;
+		object-fit: cover;
+		background-position: center;
+		position: absolute;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	h1 {
+		display: inline-block;
+		font-size: 2.5rem;
+	}
+
+	.content {
+		text-align: center;
+		background-color: linear-gradient(
+			135deg,
+			hsl(0, 80%, 86%),
+			hsl(0, 74%, 74%)
+		);
+		background-image: none;
+	}
+
+	.content p,
+	h1 {
+		text-align: center;
+		margin: 1rem 0;
+		width: 100%;
+	}
+}
